@@ -1,5 +1,14 @@
-apiVersion: v1
-appVersion: "1.0"
-description: A Helm chart for Kubernetes
-name: helm-guestbook
-version: 0.1.0
+{
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cmd/argocd-server",
+            "envFile": [
+                "${workspaceFolder}/.envrc.remote",
+            ],
+            "env": {
+                "CGO_ENABLED": "0",
+                "KUBECONFIG": "/path/to/kube/config"
+            }
+        }
