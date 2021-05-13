@@ -1,7 +1,7 @@
 {
-            "name": "hi",
-            "type": "go",
-            "request": "launch",
+            "name": "hello",
+            "type": "hello",
+            "request": "hello",
             "mode": "auto",
             "program": "${workspaceFolder}/cmd/argocd-server",
             "envFile": [
